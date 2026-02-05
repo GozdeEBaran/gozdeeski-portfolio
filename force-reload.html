@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cache Cleared - Redirecting...</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #6b9bd1;
+        color: white;
+        text-align: center;
+      }
+      .box {
+        background: white;
+        color: #333;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        margin: 0 0 20px 0;
+      }
+      .spinner {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #6b9bd1;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>🔄 Clearing Cache...</h1>
+      <div class="spinner"></div>
+      <p>Redirecting to your portfolio in 2 seconds...</p>
+      <p><small>This will force reload all files with fresh content</small></p>
+    </div>
+    <script>
+      // Clear localStorage and sessionStorage
+      localStorage.clear();
+      sessionStorage.clear();
+
+      // Add timestamp to force reload
+      setTimeout(() => {
+        window.location.href = "index.html?" + new Date().getTime();
+      }, 2000);
+    </script>
+  </body>
+</html>

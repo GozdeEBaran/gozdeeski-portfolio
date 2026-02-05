@@ -1,0 +1,33 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary and helper files
+*.log
+*.tmp
+test-supabase.html
+status-check.html
+
+# Documentation that's just for local reference
+FIX-RLS-POLICY.sql
+SUPABASE-FIX-NOW.md
+SUPABASE-SETUP.md
+START-HERE.md
+YOUR-UPDATES.md
+AZURE-DEPLOYMENT-GUIDE.md
+
+# Node modules (if you add them later)
+node_modules/
+package-lock.json
