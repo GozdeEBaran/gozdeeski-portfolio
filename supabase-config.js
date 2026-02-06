@@ -8,7 +8,6 @@ const SUPABASE_ANON_KEY =
 
 let supabaseClient = null;
 
-// Initialize Supabase once
 function initializeSupabase() {
   if (!supabaseClient) {
     if (!window.supabase) {
@@ -27,7 +26,12 @@ function initializeSupabase() {
   return supabaseClient;
 }
 
-// Submit contact form (INSERT ONLY — no SELECT)
+// ✅ Keep this because your script.js expects it
+function isSupabaseConfigured() {
+  // true only if URL/key are present AND supabase library loaded
+  return Boolean(SUPABASE_URL && SUPABASE_ANON_KEY && window.supabase);
+}
+
 async function submitContactForm(formData) {
   const client = initializeSupabase();
   if (!client) {
@@ -43,7 +47,8 @@ async function submitContactForm(formData) {
 
   console.log("📨 Sending to Supabase:", payload);
 
-  const { error } = await client.from("contact_submissions").insert(payload); // ⛔ NO .select()
+  // ✅ Insert only (no select)
+  const { error } = await client.from("contact_submissions").insert(payload);
 
   if (error) {
     console.error("❌ Supabase insert error:", error);
@@ -54,11 +59,10 @@ async function submitContactForm(formData) {
   return { success: true };
 }
 
-// Expose globally
 window.supabaseConfig = {
   initializeSupabase,
+  isSupabaseConfigured, // ✅ now exists
   submitContactForm,
 };
 
-// Auto-init
 initializeSupabase();
