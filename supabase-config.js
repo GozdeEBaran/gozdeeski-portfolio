@@ -64,5 +64,8 @@ window.supabaseConfig = {
   isSupabaseConfigured, // ✅ now exists
   submitContactForm,
 };
+function isSupabaseConfigured() {
+  return true;
+}
 
 initializeSupabase();
