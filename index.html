@@ -12,7 +12,7 @@
       content="Software Engineer, Web Development, React, Node.js, Portfolio, Full-Stack"
     />
     <title>Gozde Eski | Software Engineer</title>
-    <link rel="stylesheet" href="styles-alice.css?v=44" />
+    <link rel="stylesheet" href="styles-alice.css?v=51" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -20,42 +20,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   </head>
   <body>
-    <!-- Dark Mode Toggle -->
-    <button
-      id="darkModeToggle"
-      class="dark-mode-toggle"
-      aria-label="Toggle dark mode"
-    >
-      <svg
-        class="sun-icon"
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <circle cx="12" cy="12" r="5" />
-        <line x1="12" y1="1" x2="12" y2="3" />
-        <line x1="12" y1="21" x2="12" y2="23" />
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-        <line x1="1" y1="12" x2="3" y2="12" />
-        <line x1="21" y1="12" x2="23" y2="12" />
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-      </svg>
-      <svg
-        class="moon-icon"
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-      >
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-      </svg>
-    </button>
-
     <div id="page">
       <!-- Hero -->
       <header id="header" class="hero-minimal" role="banner">
@@ -67,6 +31,10 @@
                 <span class="hero-name-underline">Eski</span>
               </h1>
               <p class="hero-subtitle">Software Engineer</p>
+              <p class="hero-description">
+                Building AI-powered, scalable full-stack systems with applied AI
+                and cloud deployment experience.
+              </p>
               <ul class="hero-social">
                 <li>
                   <a
@@ -143,15 +111,16 @@
           <div class="about-split-text-wrapper">
             <p class="about-split-greeting">Hello,</p>
             <h1 class="about-split-title">
-              I'm Gozde Eski,a Software Engineer passionate about building
-              elegant, user-focused web applications. I enjoy working with
-              modern tools like React, Node.js, and C#, and I’m always exploring
-              ways to create cleaner, smarter solutions.
+              I'm Gozde Eski, a Software Engineer focused on full-stack
+              development and building reliable, production-ready systems. My
+              experience spans frontend and backend technologies including
+              React, Node.js, and C#, with an emphasis on scalable design and
+              maintainable architecture.
             </h1>
 
             <p class="about-split-description">
-              I hold a B.Sc. in Electrical & Electronics Engineering (WES
-              evaluated) and am currently completing an Advanced Diploma in
+              I hold a Bachelor's degree in Electrical & Electronics Engineering
+              (WES evaluated) and am currently completing an Advanced Diploma in
               Computer Programming & Analysis at George Brown College.
             </p>
 
@@ -317,10 +286,10 @@
             <div class="skill-card">
               <div class="skill-card-header">
                 <span class="skill-icon">💻</span>
-                <h3 class="skill-card-title">Languages</h3>
+                <h3 class="skill-card-title">Full-Stack Development</h3>
               </div>
               <p class="skill-card-content">
-                JavaScript (ES6+), TypeScript, C#, Go, Ruby, Python, SQL
+                React • TypeScript • Node.js • .NET • Python • C#
               </p>
             </div>
 
@@ -328,10 +297,10 @@
             <div class="skill-card">
               <div class="skill-card-header">
                 <span class="skill-icon">🧩</span>
-                <h3 class="skill-card-title">Libraries & Frameworks</h3>
+                <h3 class="skill-card-title">Backend & APIs</h3>
               </div>
               <p class="skill-card-content">
-                React, Angular, Node.js, .NET, Ruby on Rails, Django
+                Django • REST APIs • PostgreSQL • Redis
               </p>
             </div>
 
@@ -339,11 +308,10 @@
             <div class="skill-card">
               <div class="skill-card-header">
                 <span class="skill-icon">🛠️</span>
-                <h3 class="skill-card-title">Technologies & Tools</h3>
+                <h3 class="skill-card-title">Cloud & DevOps</h3>
               </div>
               <p class="skill-card-content">
-                Docker, Kubernetes, GCP, Git, PostgreSQL, CI/CD, API Testing,
-                Redis
+                AWS (S3, CloudFront) • Docker • CI/CD • Git
               </p>
             </div>
           </div>
@@ -493,19 +461,14 @@
               <div class="project-content">
                 <h3 class="project-title">Surface Defect Detection System</h3>
                 <p class="project-description">
-                  AI-powered defect detection using Siamese networks for quality
-                  control in manufacturing, with containerized deployment.
+                  AI-based surface defect detection system (95–99% accuracy)
+                  with a full-stack React dashboard and AWS-based deployment.
                 </p>
                 <div class="project-tech-icons">
                   <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
-                    alt="TensorFlow"
-                    title="TensorFlow"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg"
-                    alt="Keras/ResNet"
-                    title="Keras (ResNet)"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                    alt="PyTorch"
+                    title="PyTorch"
                   />
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
@@ -513,19 +476,19 @@
                     title="Python"
                   />
                   <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React"
+                    title="React"
+                  />
+                  <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                     alt="TypeScript"
                     title="TypeScript"
                   />
                   <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    alt="HTML5"
-                    title="HTML5"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                    alt="CSS3"
-                    title="CSS3"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                    alt="AWS S3 & CloudFront"
+                    title="AWS S3 & CloudFront"
                   />
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
@@ -647,6 +610,6 @@
     </div>
 
     <script src="supabase-config.js?v=8"></script>
-    <script src="script.js?v=44"></script>
+    <script src="script.js?v=51"></script>
   </body>
 </html>
