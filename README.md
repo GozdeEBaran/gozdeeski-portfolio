@@ -1,6 +1,6 @@
 # Full-Stack Developer Portfolio
 
-A beautiful, modern, and responsive portfolio website inspired by Alice Zhao's design. Built with clean HTML5, CSS3, and vanilla JavaScript.
+A beautiful, modern, and responsive portfolio website. Built with clean HTML5, CSS3, and vanilla JavaScript.
 
 ## ✨ Features
 
