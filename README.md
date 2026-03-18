@@ -183,7 +183,7 @@ After deploying, you can connect a custom domain through your hosting provider's
 
 - HTML5
 - CSS3 (Grid, Flexbox, Custom Properties)
-- Vanilla JavaScript
+- JavaScript
 - Google Fonts (Poppins)
 - SVG Icons
 - **Supabase** (PostgreSQL database for contact form)
@@ -216,9 +216,6 @@ Feel free to fork this template and make it your own! If you have suggestions fo
 
 This template is free to use for personal and commercial projects.
 
-## 🙏 Credits
-
-Design inspiration: [Alice Zhao](https://aliicezhao.com/)
 
 ---
 
