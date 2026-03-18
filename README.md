@@ -117,7 +117,6 @@ Your portfolio is already integrated with **Supabase** - a modern, free database
 - ✅ **Real-time dashboard** to view messages
 - ✅ **Secure** with built-in authentication
 - ✅ **Easy to set up** (see SUPABASE-SETUP.md)
-- password : HazelB22032019-
 
 **Alternative Options:**
 
